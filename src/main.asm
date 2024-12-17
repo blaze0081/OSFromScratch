@@ -20,7 +20,7 @@ puts:
 
 .loop:
     lodsb       ;loads newxt byte in al
-    or al,al    ;verify if next xharacter in null
+    or al,al    ;verify if next character in null
     jz .done
 
     mov ah, 0x0e    ; call bios interrupt
